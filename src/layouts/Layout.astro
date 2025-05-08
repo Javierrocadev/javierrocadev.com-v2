@@ -10,11 +10,15 @@ import Navegacion from "../components/Navegacion.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
+		<link rel="stylesheet" href="../../public/taos-astro.css">
+
 	</head>
 	<body>
 		<Navegacion />
 		<slot />
 		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+		<script src="../../public/taos-astro.js"></script>
+		
 	</body>
 </html>
 

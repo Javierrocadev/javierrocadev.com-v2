@@ -1,0 +1,43 @@
+/* taos-astro.css - Estilos base para las animaciones */
+
+/* Clase base para elementos animados */
+[data-taos] {
+    transition-property: opacity, transform;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    backface-visibility: hidden;
+  }
+  
+  /* Clases de utilidad para configuración de animación */
+  [data-taos-offset="100"] { margin-top: 100px; }
+  [data-taos-offset="200"] { margin-top: 200px; }
+  [data-taos-offset="300"] { margin-top: 300px; }
+  [data-taos-offset="400"] { margin-top: 400px; }
+  [data-taos-offset="500"] { margin-top: 500px; }
+  
+  /* Clases de utilidad para duración */
+  [data-taos-duration="200"] { transition-duration: 200ms; }
+  [data-taos-duration="400"] { transition-duration: 400ms; }
+  [data-taos-duration="600"] { transition-duration: 600ms; }
+  [data-taos-duration="800"] { transition-duration: 800ms; }
+  [data-taos-duration="1000"] { transition-duration: 1000ms; }
+  [data-taos-duration="1500"] { transition-duration: 1500ms; }
+  [data-taos-duration="2000"] { transition-duration: 2000ms; }
+  
+  /* Clases de utilidad para retrasos */
+  [data-taos-delay="100"] { transition-delay: 100ms; }
+  [data-taos-delay="200"] { transition-delay: 200ms; }
+  [data-taos-delay="300"] { transition-delay: 300ms; }
+  [data-taos-delay="400"] { transition-delay: 400ms; }
+  [data-taos-delay="500"] { transition-delay: 500ms; }
+  [data-taos-delay="700"] { transition-delay: 700ms; }
+  [data-taos-delay="1000"] { transition-delay: 1000ms; }
+  
+  /* Clases de utilidad para funciones de easing */
+  [data-taos-easing="linear"] { transition-timing-function: linear; }
+  [data-taos-easing="ease"] { transition-timing-function: ease; }
+  [data-taos-easing="ease-in"] { transition-timing-function: ease-in; }
+  [data-taos-easing="ease-out"] { transition-timing-function: ease-out; }
+  [data-taos-easing="ease-in-out"] { transition-timing-function: ease-in-out; }
+  [data-taos-easing="ease-in-back"] { transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+  [data-taos-easing="ease-out-back"] { transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  [data-taos-easing="ease-in-out-back"] { transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }

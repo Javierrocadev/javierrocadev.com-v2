@@ -1,1 +1,25 @@
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+
+
+@font-face {
+    font-family: "Inter";
+    src: url('../assets/fonts/Inter-VariableFont_opsz\,wght.woff2');
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cals";
+    src: url('../assets/fonts/CalSans-SemiBold.woff2');
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+}
+
+@theme{
+    --font-sans: 'Inter', systeme-ui ,sans-serif;
+    --font-cals: 'Cals', systeme-ui ,sans-serif;
+}
