@@ -49,3 +49,16 @@
     </div>
   </div>
 </nav>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('[data-collapse-toggle="navbar-fullscreen"]');
+    const menu = document.getElementById('navbar-fullscreen');
+
+    toggleButton?.addEventListener('click', (e) => {
+      e.preventDefault(); // Evita el comportamiento por defecto
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('fixed');
+      toggleButton.setAttribute('aria-expanded', menu.classList.contains('hidden') ? 'false' : 'true');
+    });
+  });
+</script>
